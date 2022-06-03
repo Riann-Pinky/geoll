@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "948363528146",
+    "project_id": "gell-cb743",
+    "storage_bucket": "gell-cb743.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948363528146:android:68be973e71ed19da3b2a0b",
+        "android_client_info": {
+          "package_name": "com.example.geoll"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948363528146-l16lohlmc4k7qnkl69mi38vuvc60j9iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWAGajkaQFm-1ibkzV6Knk9haL6EmHhpQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948363528146-l16lohlmc4k7qnkl69mi38vuvc60j9iq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
