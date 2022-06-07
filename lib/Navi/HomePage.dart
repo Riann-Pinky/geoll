@@ -248,48 +248,61 @@ class _HomePageState extends State<HomePage> {
                 height: 20,
               ),
               Container(
-                height: 540,
-                child: GridView.builder(
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2),
-                    itemBuilder: (context, index) {
-                      return Container(
-                        width: 157,
-                        height: 150,
-                        child: Card(
-                          shadowColor: Colors.black,
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(5),
-                                child: Image(
-                                  image: AssetImage(
-                                      'assets/images/random/produk/1.jpg'),
-                                  width: 90,
-                                  height: 90,
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(10),
-                                child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                child: Column(
+                  children: [
+                    SingleChildScrollView(
+                      child: Builder(builder: (context) {
+                        return makan(gambar: "", teks: "02");
+                      }),
+                    ),
+                    Container(
+                      height: 540,
+                      child: GridView.builder(
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: 2),
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 157,
+                              height: 150,
+                              child: Card(
+                                shadowColor: Colors.black,
+                                child: Column(
                                   children: [
-                                    Text(
-                                      'Item Produk',
-                                      style: TextStyle(
-                                        fontFamily: "Montserrat-SemiBold",
-                                        fontSize: 11,
+                                    Padding(
+                                      padding: const EdgeInsets.all(5),
+                                      child: Image(
+                                        image: AssetImage(
+                                            'assets/images/random/produk/1.jpg'),
+                                        width: 90,
+                                        height: 90,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(10),
+                                      child: Row(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'Item Produk',
+                                            style: TextStyle(
+                                              fontFamily: "Montserrat-SemiBold",
+                                              fontSize: 11,
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ],
                                 ),
                               ),
-                            ],
-                          ),
-                        ),
-                      );
-                    }),
-              )
+                            );
+                          }),
+                    ),
+                  ],
+                ),
+              ),
             ],
           )),
     );

@@ -32,7 +32,10 @@ class _editState extends State<edit> {
                       children: [
                         IconButton(
                           onPressed: () {
-                            Navigator.of(context).pop();
+                            Navigator.of(context).pushReplacement(
+                                MaterialPageRoute(builder: (_) {
+                              return akun();
+                            }));
                           },
                           icon: Icon(
                             Icons.keyboard_arrow_left_sharp,
@@ -54,7 +57,7 @@ class _editState extends State<edit> {
                         Spacer(),
                         TextButton(
                           onPressed: () {
-                            Navigator.push(
+                            Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(builder: (context) {
                                 return akun();

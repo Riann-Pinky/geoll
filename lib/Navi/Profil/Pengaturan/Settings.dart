@@ -26,12 +26,13 @@ class _setingState extends State<seting> {
                 children: [
                   IconButton(
                     onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) {
-                          return nav();
-                        }),
-                      );
+                      Navigator.of(context).pop();
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(builder: (context) {
+                      //     return nav();
+                      //   }),
+                      // );
                     },
                     icon: Icon(
                       Icons.keyboard_arrow_left_sharp,

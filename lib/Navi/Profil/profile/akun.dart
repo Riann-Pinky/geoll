@@ -47,7 +47,7 @@ class _akunState extends State<akun> {
                     Spacer(),
                     TextButton(
                       onPressed: () {
-                        Navigator.push(
+                        Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(builder: (context) {
                             return edit();
